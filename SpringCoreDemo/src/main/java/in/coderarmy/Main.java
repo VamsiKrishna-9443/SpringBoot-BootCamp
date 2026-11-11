@@ -1,5 +1,6 @@
 package in.coderarmy;
 
+import in.strikes.CartService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -13,5 +14,10 @@ public class Main {
         OrderService order = context.getBean(OrderService.class);
         order.placeOrder();
 
+        User user = context.getBean(User.class);
+        System.out.println(user.getName());
+
+//        CartService cart = context.getBean(CartService.class);
+//        cart.addToCart();
     }
 }
