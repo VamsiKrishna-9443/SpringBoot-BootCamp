@@ -37,3 +37,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+printf '\n# IntelliJ IDEA\n.idea/\n' >> .gitignore
