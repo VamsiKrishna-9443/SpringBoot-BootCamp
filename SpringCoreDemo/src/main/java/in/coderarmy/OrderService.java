@@ -13,11 +13,12 @@ public class OrderService {
     private PaymentService paymentService;
 
     @Autowired  // Constructor Injection
-    public OrderService(@Qualifier("cp") PaymentService paymentService)
+    public OrderService(PaymentService paymentService)
     {
         this.paymentService = paymentService;
     }
-//    @Autowired  //Setter Injection
+//    @Autowired //Setter Injection
+//    @Qualifier("cp")
 //    public void setPaymentService(PaymentService paymentService)
 //    {
 //        this.paymentService = paymentService;
